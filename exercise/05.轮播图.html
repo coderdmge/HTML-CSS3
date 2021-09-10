@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img-list{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            list-style: none;
+            position: relative;
+        }
+        .img-list li{
+            position: absolute;
+        }
+        .pointer{
+            position: absolute;
+            z-index: 99999;
+            bottom: 26px;
+            left: 26px;
+        }
+        .pointer a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, .3);
+            background-clip: content-box;
+            margin: 0 2px;
+            border: 2px solid transparent;
+        }
+        .pointer a.active,
+        .pointer a:hover{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="#"><img src="jdimg/1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/6.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/7.jpg" alt=""></a></li>
+        <li><a href="#"><img src="jdimg/8.jpg" alt=""></a></li>
+        <div class="pointer">  
+            <a href="#" class="active"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </ul>
+</body>
+</html>

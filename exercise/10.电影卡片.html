@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .outer{
+            width: 240px;
+            margin: 50px auto;
+        }
+        .title-films{
+            color: #717171;
+            font-size: 18px;
+            margin: 14px 0px 12px 12px;
+        }
+        .title-movies{
+            font-size: 14px;
+            color:#acaaaa;
+            margin:  0  0 12px 12px ;
+        }
+        .title-movies::before{
+            content: "\e63f";
+            font-family: "iconfont";
+            margin-right: 6px;
+            margin-left: 2px;
+        }
+        .outer p{
+            font-size: 13px;
+            color:#acaaaa;
+            line-height: 21px;
+            margin-left: 12px;
+            margin-bottom: 18px;
+        }
+        .bottom{
+            height: 46px;
+            line-height: 46px;
+            border-top: 1px solid rgb(221, 221, 221);
+        }
+      
+        .star span.iconfont{
+            color: rgb(146, 145, 145);
+            font-size: 18px;
+        }
+        .bottom .star {
+            margin-left: 14px;
+        }
+        .bottom .star .highlight{
+            color: rgb(185, 203, 65);
+        }
+       .star .icon-weibo{
+           margin: 0px 32px 0px 84px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="beayty-img"><img src="img/11.jpg" alt=""></div>
+        <h3 class="title-films"> Animation films</h3>
+        <h4 class="title-movies">Movies</h4>
+        <p>Lorem ipsum is simply dummy text of the printing typesettingt ineustry</p>
+        <section class="bottom">
+            <div class="star">
+                <span class="iconfont icon-star highlight"></span>
+                <span class="iconfont icon-star highlight" ></span>
+                <span class="iconfont icon-star"></span>
+                <span class="iconfont icon-star"></span>
+                <span class="iconfont icon-weibo"></span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

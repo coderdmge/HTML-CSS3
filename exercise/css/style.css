@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+.w,
+.top-bar,
+.banner,
+.nav,
+.container {
+  width: 17.35rem;
+  margin: 0 auto;
+}
+.top-bar {
+  display: flex;
+  height: 4.35rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .menu .iconfont {
+  font-size: 0.75rem;
+  color: #999;
+}
+.top-bar .title a {
+  font-size: 1.25rem;
+  color: #24253d;
+}
+.top-bar .search i.iconfont {
+  font-size: 1rem;
+  color: #999;
+}
+.banner img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  height: 8.25rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+.nav a {
+  width: 8.15rem;
+  height: 2.55rem;
+  line-height: 2.55rem;
+  background-color: #bfa;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+.nav a i.iconfont {
+  font-size: 0.75rem;
+  margin: 0 0.8rem 0 0.9rem;
+}
+.nav a:first-child {
+  background-color: #f87257;
+}
+.nav a:nth-child(2) {
+  background-color: #ce71fe;
+}
+.nav a:nth-child(3) {
+  background-color: #ff3971;
+}
+.nav a:nth-child(4) {
+  background-color: #1caffd;
+}
+.container {
+  height: 9.9rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+.container .item-list {
+  display: flex;
+  overflow: auto;
+}
+.container .course {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .course h2 {
+  font-size: 0.85rem;
+  color: #24253d;
+  border-left: 2px solid #1caffd;
+  padding-left: 4px;
+}
+.container .course a {
+  font-size: 0.7rem;
+  color: #656565;
+}
+.container .img-wraper {
+  margin-right: 0.55rem;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 8rem;
+  padding: 0 0.55rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 8.1rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.container .img-wraper img {
+  width: 100%;
+}
+.container .img-wraper h3 {
+  font-size: 0.65rem;
+  color: #24253d;
+}
+.container .img-wraper .title-wraper {
+  width: 1.05rem;
+  height: 1.05rem;
+  display: flex;
+  align-items: center;
+}
+.container .img-wraper .title-wraper h3 {
+  font-size: 0.55rem;
+  color: #969393;
+  margin-left: 6px;
+}
+/*# sourceMappingURL=./style.css.map */

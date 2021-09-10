@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@real-width:750;
+html{
+    font-size: 100vw/@real-width*40;
+    background-color: #eff0f4;
+}
+a{
+    text-decoration: none;
+}
+.w{
+    width: 694/40rem;
+    margin: 0 auto;
+}
+.top-bar:extend(.w){
+    display: flex;
+    height: 174/40rem;
+    justify-content: space-between;
+    align-items: center;
+    .menu .iconfont{
+        font-size: 30/40rem;
+        color: #999;
+    }
+    .title a{
+        font-size: 50/40rem;
+        color: #24253d;
+    }
+    .search i.iconfont{
+        font-size: 1rem;
+        color: #999;
+    }
+}
+.banner:extend(.w){
+    img{
+        width: 100%;
+    }
+}
+.nav:extend(.w){
+    display: flex;
+    height: 330/40rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    a{
+        width: 326/40rem;
+        height:102/40rem ;
+        line-height: 102/40rem;
+        background-color: #bfa;
+        color: white;
+        border-radius: 10/40rem;
+        font-size: 30/40rem;
+        i.iconfont{
+            font-size: 30/40rem;
+            margin: 0 32/40rem 0 36/40rem;
+        }
+    }
+    a:first-child{
+        background-color: #f87257;
+    }
+    a:nth-child(2){
+        background-color: #ce71fe;
+    }
+    a:nth-child(3){
+        background-color: #ff3971;
+    }
+    a:nth-child(4){
+        background-color: #1caffd;
+    }
+}
+.container:extend(.w){
+    .item-list{
+        display: flex;
+        overflow: auto;
+    }
+    height: 396/40rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 46/40rem;
+    .course{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2{
+            font-size: 34/40rem;
+            color: #24253d;
+            border-left: 2px solid #1caffd;
+            padding-left: 4px;
+        }
+        a{
+            font-size: 28/40rem;
+            color: #656565;
+        }
+    }
+   .img-wraper{
+       margin-right: 22/40rem;
+       flex: none;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       width: 320/40rem;
+       padding: 0 22/40rem;
+       box-sizing: border-box;
+       box-shadow: 0 0 10px rgba(0,0,0,.3);
+       height: 324/40rem;
+       border-radius: 8px;
+       background-color: #fff;
+       img{
+           width: 100%;
+       }
+       h3{
+           font-size: 26/40rem;
+           color: #24253d;
+       }
+       .title-wraper{
+           width: 42/40rem;
+           height:42/40rem ;
+           display: flex;
+           align-items: center;
+           h3{
+               font-size: 22/40rem;
+               color: #969393;
+               margin-left: 6px;
+           }
+       }
+   }
+}

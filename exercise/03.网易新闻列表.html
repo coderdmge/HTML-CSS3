@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #bfa;
+        }
+        a{
+            text-decoration: none;
+        }
+        .wrap{
+            width: 300px;
+            height: 339px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+        .wrap .news-title{
+            height: 40px;
+            display: inline-block;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            line-height: 40px;
+        }
+        .news-img{
+            height: 150px;
+        }
+        .news-title a{
+            color: rgb(64, 64, 64);
+            font-weight: bold;
+        }
+        .news-img h3{
+            color: #fff;
+            font-weight: bold;
+            margin-top: -34px;
+            padding-left: 20px;
+            font-size: 16px;
+            font-family: "微软雅黑";
+        }
+        .news-list{
+            list-style: none;
+            margin-top: 16px;
+            /* padding-left: 14px; */
+        }
+        .news-list li{
+            margin-bottom: 10px;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: rgb(68, 73, 82);
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+        .news-list li::before{
+            content: "◆";
+            color: rgb(196, 199, 204);
+            margin-right: 4px;
+            font-size: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="wrap">
+        <h3 class="news-title"><a href="#">体育</a></h3>
+        <div class="news-img">
+            <a href="#">
+                <img src="img/4.jpg" alt="">
+                <h3>瓦呢莎晒照为科比送父亲节祝福</h3>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li><a href="">乔治:我爱LA 喜欢和LBJ一起打球</a></li>
+            <li><a href="">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+            <li><a href="">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+            <li> <a href="">CBA下季新赛制:常规赛4组循环 增至46</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

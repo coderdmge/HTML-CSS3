@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock{
+            width: 500px;
+            height: 500px;
+            margin:  100px auto;
+            border-radius: 50%;
+            position: relative;
+            background-image: url("./img2/bg.png");
+            background-size: cover;
+        }
+        .hour-wrap{
+            position: absolute;
+            width: 70%;
+            height: 70%;
+        }
+        .clock >div{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        .hour{
+            height: 50%;
+            width: 6px;
+            background-color: #000;
+            margin: 0 auto;
+            animation: run 43200s infinite;
+        }
+        .minute-wrap{
+            width: 80%;
+            height: 80%;
+            animation: run 3600s infinite;
+        }
+        .minute-wrap .minute{
+            height: 50%;
+            width: 4px;
+            background-color: #000;
+            margin: 0 auto;
+        }
+        .second-wrap{
+            width: 90%;
+            height: 90%;
+            animation: run 60s infinite steps(60);
+        }
+        .second-wrap .second{
+            height: 50%;
+            width: 2px;
+            margin: 0 auto;
+            background-color: red;
+        }
+        @keyframes run{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour-wrap">
+            <div class="hour"></div>
+        </div>
+        <div class="minute-wrap">
+            <div class="minute"></div>
+        </div>
+        <div class="second-wrap">
+            <div class="second"></div>
+        </div>
+    </div>
+</body>
+</html>

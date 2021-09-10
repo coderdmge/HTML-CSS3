@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after,
+        .clearfix::before{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        body{
+            font: 12px "Microsoft YaHei";
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .top-bar{
+            width: 100%;
+            background-color: rgb(227, 228, 229);
+            border-bottom: 1px solid rgb(221, 221, 221);
+            line-height: 30px;
+            color: #999;
+            height: 30px;
+        }
+        .top-inner-bar{
+            width: 1190px;
+            margin: 0 auto;
+
+        }
+        .location{
+            float: left;
+            position: relative;
+        }
+        .top-right-bar{
+            float:right;
+        }
+        .top-right-bar li{
+            float: left;
+        }
+        a:link{
+            color: #999;
+        }
+        .iconfont.icon-map{
+            font-size: 14px;
+            color: #f10215;
+            font-weight: bolder;
+        }
+        .top-bar a:hover,
+        .top-bar a.highlight {
+            color: #f10215;
+        }
+       
+
+       .top-right-bar .line{
+           width: 1px;
+           height: 8px;
+           background-color: #999;
+           margin: 12px ;
+       }
+       .top-bar .citylist{
+           display: none;
+           width: 320px;
+           height: 436px;
+           background-color: #fff;
+           border:  1px solid rgb(204,204,204);
+       }
+       .location:hover .citylist{
+           display: block;
+           position: absolute;
+           box-shadow: 0px 2px 8px rgba(0,0,0,.3);
+           top: 31px;
+           z-index: 999;
+          
+         
+       }
+       .current-city{
+           padding: 0 10px 1px;
+           position: relative;
+           z-index: 9999;
+           border:  1px solid transparent;
+           border-bottom: none;
+        
+       }
+       .location:hover .current-city{
+           background-color: #fff;
+           border:  1px solid rgb(204,204,204);
+           border-bottom: none;
+       }
+
+    </style>
+</head>
+<body>
+<div class="top-bar clearfix">
+    <div class="top-inner-bar ">
+        <div class="location" >
+            <div class="current-city">
+                <span class="iconfont icon-map"></span>
+                 <a href="#">江西</a>
+            </div>
+          <div class="citylist"></div>
+        </div>
+        <ul class="top-right-bar">
+            <li><a href="#">您好，请登录</a> <a href="#" class="highlight">免费注册</a> </li>
+            <li class="line"></li>
+            <li><a href="#">我的订单</a> </li>
+            <li class="line"></li>
+            <li><a href="#">我的京东</a> <i class="iconfont icon-xialajiantou"></i></li>
+            <li class="line"></li>
+            <li><a href="#">京东会员</a> </li>
+            <li class="line"></li>
+            <li><a href="#" class="highlight">企业采购</a> <i class="iconfont icon-xialajiantou"></i></li>
+            <li class="line"></li>
+            <li><span>客户服务</span> <i class="iconfont icon-xialajiantou"></i></li>
+            <li class="line"></li>
+            <li><span>网站导航</span> <i class="iconfont icon-xialajiantou"></i></li>
+            <li class="line"></li>
+            <li><span>手机京东</span></li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

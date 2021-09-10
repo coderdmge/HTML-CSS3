@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #c5c4c4;
+}
+ul {
+  list-style: none;
+}
+.top-bar-wraper {
+  background-color: #000;
+}
+.top-bar {
+  max-width: 1200px;
+  height: 48px;
+  background-color: #000;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+span {
+  color: #fff;
+  font-size: 14px;
+}
+.left-menu:active .nav1 {
+  display: block;
+}
+.left-menu .nav1 {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  font-size: 14px;
+  padding-top: 60px;
+}
+.left-menu .nav1 li {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.left-menu .nav1 a {
+  display: inline-block;
+  line-height: 44px;
+}
+.left-menu .nav1 a i {
+  margin-right: 6px;
+}
+.left-menu .nav {
+  height: 48px;
+  width: 18px;
+  position: relative;
+}
+.left-menu .nav:active li:first-child {
+  top: 18px;
+  transform: rotateZ(40deg);
+}
+.left-menu .nav:active li:nth-child(2) {
+  top: 24px;
+  opacity: 0;
+}
+.left-menu .nav:active li:last-child {
+  top: 30px;
+  transform: rotateZ(-40deg);
+}
+.left-menu .nav li {
+  width: 18px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.left-menu .nav li:first-child {
+  top: 18px;
+}
+.left-menu .nav li:nth-child(2) {
+  top: 24px;
+}
+.left-menu .nav li:last-child {
+  top: 30px;
+}
+.logo a {
+  display: block;
+  width: 127px;
+  height: 24px;
+  background-image: url("../img3/dff63979.sprites-index@2x.png");
+  background-size: 400px 400px;
+  text-indent: -99999px;
+}
+@media only screen and (min-width: 768px) {
+  .left-menu {
+    order: 2;
+    flex: auto;
+  }
+  .left-menu .nav {
+    display: none;
+  }
+  .left-menu .nav1 {
+    display: flex;
+    position: static;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .left-menu .nav1 li {
+    width: auto;
+    border-bottom: none;
+    margin: 0;
+  }
+  .left-menu .nav1 li span {
+    display: none;
+  }
+  .left-menu .nav1 li a {
+    line-height: 48px;
+  }
+  .logo {
+    order: 1;
+  }
+  .user-info {
+    order: 3;
+  }
+}
+/*# sourceMappingURL=./style.css.map */
